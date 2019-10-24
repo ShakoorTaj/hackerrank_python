@@ -13,6 +13,4 @@ class Difference:
 a = [1,2,5,7]
 
 d = Difference(a)
-d.computeDifference()
-m = d.computeDifference
 print(d.computeDifference())
