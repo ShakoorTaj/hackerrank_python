@@ -38,8 +38,22 @@ for i in range(len(arr) - 2):  # range(0, 4) - loop for row
                    arr[i + 2][j + 2]    # [3rd row][3rd col]
                    )
 
+        # list comprehension
+        # max_sum = [(
+        #             arr[i][j] +     # [1st row][1st col]
+        #            arr[i][j + 1] +  # [1st row][2nd col]
+        #            arr[i][j + 2] +  # [1st row][3rd col]
+        #
+        #            arr[i + 1][j + 1] +  # [2nd row][2nd col]
+        #
+        #            arr[i + 2][j] +      # [3rd row][1st col]
+        #            arr[i + 2][j + 1] +  # [3rd row][2nd col]
+        #            arr[i + 2][j + 2]    # [3rd row][3rd col]
+        #            ) for i in range(0, 4) for j in range(0, 4)]
+
 max_sum_of_hourglass = max(sum_of_hourglass)
 print(max_sum_of_hourglass)
+# print(max(max_sum))
 
 
 
